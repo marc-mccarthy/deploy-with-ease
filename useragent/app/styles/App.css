@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.agent-info {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.no-identity {
+  font-size: 18px;
+  color: #999;
+  margin-top: 20px;
+  text-align: center;
+}
+
+button {
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.no-identity {
+  text-align: center;
+  margin-top: 2rem;
+  color: #999;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px; /* Add padding for better visual appearance */
+}
+
+.header-title {
+  font-size: 36px;
+  color: #ff5733; /* Initial color (orange) */
+  animation: colorSizeChange 4s linear infinite; /* Add a color and size change animation */
+  margin-bottom: 40px;
+}
+
+@keyframes colorSizeChange {
+  0%, 100% {
+    color: #ff5733; /* Start and end with orange */
+    transform: scale(1); /* Start and end with normal size */
+  }
+  25%, 75% {
+    color: #007bff; /* Change to blue midway */
+    transform: scale(1.2); /* Scale up midway */
+  }
+}

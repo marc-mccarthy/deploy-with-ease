@@ -1,0 +1,58 @@
+.user-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - 20px), 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Adjust the styling for individual sections */
+.browser-info,
+.device-info,
+.os-info {
+  margin: 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column; /* Added to make text and list align to top */
+  justify-content: flex-start; /* Added to make text and list align to top */
+  align-items: center; /* Center horizontally */
+}
+
+/* Style headings for individual sections */
+.browser-info h3,
+.device-info h3,
+.os-info h3 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #007bff;
+  text-decoration: underline; /* Underline headings */
+}
+
+/* Style item details in each section */
+h4 {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+/* Hover effect on boxes */
+.browser-info:hover,
+.device-info:hover,
+.os-info:hover {
+  background-color: #e0e0e0;
+}
+
+/* Style the 'No Identity' message */
+.no-identity {
+  text-align: center;
+  margin-top: 2rem;
+  color: #999;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px; /* Add padding for better visual appearance */
+}
