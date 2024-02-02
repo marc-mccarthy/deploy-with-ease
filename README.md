@@ -63,9 +63,17 @@ code -v
 terraform -v
 ```
 
-### Creating AWS Account
+You should see the current versions installed as outputs.
+
+### Creating an AWS Account
 
 [AWS Account Creation](https://portal.aws.amazon.com/billing/signup) - Sign up for an Amazon Web Services account.
+
+### Creating an IAM user
+
+[IAM User Creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console) - Create a user for this workshop.
+
+Add the [AdministratorAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AdministratorAccess.html) policy to your IAM user.
 
 ### Acquiring AWS Access and Secret keys
 
@@ -100,7 +108,7 @@ Once this process in complete, you can either look at the React code more and sp
 
 1. Create a `local.auto.tfvars` file from the [local.auto.tfvars.example](./local.auto.tfvars.example) file.
 2. Add your preferred AWS Region here as a string.
-4. In your Terminal, ensure you are in the repo directory, then run in order:
+3. In your Terminal, ensure you are in the repo directory, then run in order:
 
 ```shell
 cd terraform
