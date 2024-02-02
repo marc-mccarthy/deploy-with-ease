@@ -74,11 +74,39 @@ terraform -v
 
 Store these keys in a secure location. This is your authentication for your identity on AWS!
 
+## React
+
+- In you Terminal, lets go into our `useragent` folder:
+
+```shell
+cd useragent
+```
+
+- Let's install our dependencies:
+
+```shell
+npm i
+```
+
+- Now let's build our application so that Terraform can send the files up to AWS:
+
+```shell
+npm run build
+```
+
+Once this process in complete, you can either look at the React code more and spin it up locally, or move on to Terraform.
+
 ## Terraform
 
 1. Create a `local.auto.tfvars` file from the [local.auto.tfvars.example](./local.auto.tfvars.example) file.
 2. Add your preferred AWS Region here as a string.
-3. In your Terminal, ensure you are in the repo directory, then run in order:
+4. In your Terminal, ensure you are in the repo directory, then run in order:
+
+```shell
+cd terraform
+```
+
+This will get you into the correct directory where the Terraform files are.
 
 ```hcl
 terraform init
